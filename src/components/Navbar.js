@@ -1,11 +1,15 @@
 import { Link } from 'react-router-dom';
 
-function NavBar () {
+function Navbar () {
     return (
         <nav className='nav'>
 
             <Link to='/'> 
                 <div>HOME</div>
+            </Link>
+
+            <Link to='/stocks'> 
+                <div>Stocks</div>
             </Link>
 
             <Link to='/about'> 
@@ -14,3 +18,5 @@ function NavBar () {
         </nav>
     )
 }
+
+export default Navbar;
