@@ -1,7 +1,7 @@
 import Nav from 'react-bootstrap/Nav';
 
 
-function Navbar ({location}) {
+function Navbar () {
     return (
         <Nav variant="pills">
             <Nav.Item>
