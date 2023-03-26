@@ -1,21 +1,27 @@
-import { Link } from 'react-router-dom';
+import Nav from 'react-bootstrap/Nav';
 
-function Navbar () {
+
+function Navbar ({location}) {
     return (
-        <nav className='nav'>
+        <Nav variant="pills">
+            <Nav.Item>
+                <Nav.Link href='/'> 
+                    <div>HOME</div>
+                </Nav.Link>
+            </Nav.Item>
 
-            <Link to='/'> 
-                <div>HOME</div>
-            </Link>
+            <Nav.Item>
+                <Nav.Link eventKey="Link-1" href="/stocks"> 
+                    <div>STOCKS</div>
+                </Nav.Link>
+            </Nav.Item>
 
-            <Link to='/stocks'> 
-                <div>Stocks</div>
-            </Link>
-
-            <Link to='/about'> 
-                <div>ABOUT</div>
-            </Link>
-        </nav>
+            <Nav.Item>
+                <Nav.Link  href='/about'> 
+                    <div>ABOUT</div>
+                </Nav.Link>
+            </Nav.Item>
+        </Nav>
     )
 }
 
