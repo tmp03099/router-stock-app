@@ -9,7 +9,7 @@ function NavBar () {
             <Container>
             <Nav className="me-auto">
 
-                <Nav.Link eventKey={1} href='/'> 
+                <Nav.Link href='/'> 
                     <div>HOME</div>
                 </Nav.Link>
             </Nav>

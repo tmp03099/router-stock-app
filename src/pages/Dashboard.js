@@ -31,9 +31,9 @@ function Dashboard(){
                 </thead>
                 <tbody>
                     {stocks.map((ele,idx) => (
-                    <tr>
+                    <tr key={idx}>
                         <td>
-                            <Link to={`/stocks/${ele.symbol}`} key={idx}>
+                            <Link to={`/stocks/${ele.symbol}`} >
                                 {ele.name}
                             </Link>
                         </td>
