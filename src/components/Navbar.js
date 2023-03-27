@@ -1,28 +1,38 @@
+import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
 
 
-function Navbar () {
+function NavBar () {
     return (
-        <Nav variant="pills">
-            <Nav.Item>
-                <Nav.Link href='/'> 
+        <Navbar bg="dark" variant="dark">
+            <Container>
+            <Nav className="me-auto">
+
+                <Nav.Link eventKey={1} href='/'> 
                     <div>HOME</div>
                 </Nav.Link>
-            </Nav.Item>
-
-            <Nav.Item>
-                <Nav.Link eventKey="Link-1" href="/stocks"> 
+            </Nav>
+          
+            
+            <Nav className="me-auto">
+                <Nav.Link href="/stocks"> 
                     <div>STOCKS</div>
                 </Nav.Link>
-            </Nav.Item>
+            </Nav>
 
-            <Nav.Item>
+            <Nav className="me-auto">
                 <Nav.Link  href='/about'> 
                     <div>ABOUT</div>
                 </Nav.Link>
-            </Nav.Item>
-        </Nav>
+
+            </Nav>
+
+            </Container>
+        
+            
+        </Navbar>
     )
 }
 
-export default Navbar;
+export default NavBar;
