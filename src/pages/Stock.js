@@ -11,12 +11,12 @@ function Stock() {
 
   //call the getStock function when the component render
   useEffect(() => {
-    const loadPrice = async (symbol) => {
+    const loadPrice = async () => {
       const data = await getPrices(symbol);
       setPriceData(data);
     };
-    loadPrice(symbol);
-  }, []);
+    loadPrice();
+  }, [symbol]);
 
   return (
     <div>
