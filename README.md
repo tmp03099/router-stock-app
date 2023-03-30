@@ -2,6 +2,13 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Main Feautures
+- Get data from an API to load the stocks information for the webpage
+- Applied router to navigate to the webpage
+- Display the table Most Active Stocks with 20 limit stocks
+
+
+
 ## Available Scripts
 
 In the project directory, you can run:
